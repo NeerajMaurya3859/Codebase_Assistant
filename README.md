@@ -57,9 +57,9 @@ React UI → FastAPI upload/question endpoints → source-file extraction → li
 - Node.js 18+
 - OpenAI API key with API billing/credits enabled
 - Ollama API (use any one Ollama or OpenAI)
-
-## 1. Configure backend
-
+<h2><a class="anchor"id="getting-started"></a>Getting Started</h2>
+<h3><a class="anchor" id="configured-backend"></a> Configure backend
+</h3>
 Open a terminal in `backend/`:
 
 ### Windows PowerShell
@@ -89,7 +89,8 @@ uvicorn app.main:app --reload --port 8000
 
 API docs: http://localhost:8000/docs
 ```
-## 2. Run frontend
+<h3><a class="anchor" id="run frontend"></a> run frontend
+</h3>
 Open another terminal in `frontend/`:
 ```bash
  npm install
@@ -97,7 +98,8 @@ Open another terminal in `frontend/`:
 
 Open the local URL printed by Vite (usually http://localhost:5173).
 ```
-## 3. How to use it
+<h2><a class="anchor" id="how to use"></a> how to use
+</h2>
 
 1. Create a ZIP of a small source-code project.
 2. Upload the ZIP in RepoPilot.
@@ -108,7 +110,8 @@ Open the local URL printed by Vite (usually http://localhost:5173).
    - "What does the upload handler do?"
 5. Click source references in the answer to inspect the retrieved snippets.
 
-## Environment variables
+<h2><a class="anchor" id="environment-variables"></a>environment variables
+</h2>
 
 `backend/.env`:
 ```env
