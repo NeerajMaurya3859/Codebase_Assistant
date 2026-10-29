@@ -9,9 +9,15 @@ A small GenAI mini project that lets you upload a ZIP of source code, indexes co
 - <a href="#Architecture">Architecture</a>
 - <a href="#Tech Stack">Tech Stack</a>
 - <a href="#Requirement">Requirement</a>
+-<a href="#getting-started">Getting Started</a>
+  -<a href="#1-configure-the-backend">1.Configure the Backend</a>
+  -<a href="#2-run-the-backend">2.Run the backend</a>
+  -<a href="#3-run-the-frontend">3.Run the frontend</a>
+-<a href="#how-to-use">How to Use</a>
+-<a href="enviroment-varibles">Environment Variables<a>
 - <a href="#Notes and Limitation">Notes and Limitation</a>
 - <a href="#Future Scope">Future Scope</a>
-
+-<a href="#author">Author</a>
 <h2><a class="anchor" id="Problem statement"></a>Problem statement</h2>
 
 Understanding an unfamiliar codebase can take time, especially for students working with projects created by other people. Searching files manually often fails when the user does not know the exact function or filename.
@@ -91,7 +97,7 @@ Open another terminal in `frontend/`:
 
 Open the local URL printed by Vite (usually http://localhost:5173).
 ```
-## 3. Use it
+## 3. How to use it
 
 1. Create a ZIP of a small source-code project.
 2. Upload the ZIP in RepoPilot.
