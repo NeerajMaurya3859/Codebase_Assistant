@@ -40,7 +40,7 @@ Understanding an unfamiliar codebase can take time, especially for students work
 <h2 id="features">Features</h2>
 - Upload a `.zip` repository (no database required)
 - Extract and chunk supported source files
-- Generate embeddings with OpenAI
+- Generate embeddings with gemini
 - Retrieve relevant chunks using cosine similarity
 - Answer questions using retrieved context
 - Show source filenames and line ranges
@@ -48,19 +48,19 @@ Understanding an unfamiliar codebase can take time, especially for students work
 
 <h2 id="architecture">Architecture</h2>
 
-React UI → FastAPI upload/question endpoints → source-file extraction → line-based chunking → OpenAI embeddings → in-memory NumPy vectors → cosine-similarity retrieval → OpenAI chat completion → answer and source snippets.
+React UI → FastAPI upload/question endpoints → source-file extraction → line-based chunking → gemini embeddings → in-memory NumPy vectors → cosine-similarity retrieval → gemini chat completion → answer and source snippets.
 
 <h2 id="tech-stack">Tech Stack</h2>
 - Frontend: React + Vite
 - Backend: FastAPI
-- Embeddings and answers: OpenAI API
+- Embeddings and answers: gemini API
 - Vector storage: in-memory NumPy arrays (resets when backend restarts)
 
 <h2 id="requirements">Requirements</h2>
 - Python 3.10+
 - Node.js 18+
-- OpenAI API key with API billing/credits enabled
-- Ollama API (use any one Ollama or OpenAI)
+- gemini API key with API billing/credits enabled
+- gemini API 
 <h2 id="getting-started">Getting Started</h2>
 <h3 id="configure-backend">Configure the Backend</h3>
 Open a terminal in `backend/`:
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 Copy-Item .env.example .env
 ```
 
-Edit `backend/.env` and set `OPENAI_API_KEY=your_key_here`.
+Edit `backend/.env` and set `GEMINI_API_KEY=your_key_here`.
 
 ### macOS/Linux
 
@@ -113,9 +113,9 @@ Open the local URL printed by Vite (usually http://localhost:5173).```
 
 `backend/.env`:
 ```env
-OPENAI_API_KEY=your_key_here
-OPENAI_CHAT_MODEL=gpt-4o-mini
-OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+GEMINI_API_KEY=your_key_here
+GEMINI_CHAT_MODEL=gpt-4o-mini
+GEMINI_EMBEDDING_MODEL=text-embedding-3-small
 FRONTEND_ORIGIN=http://localhost:5173
 ```
 

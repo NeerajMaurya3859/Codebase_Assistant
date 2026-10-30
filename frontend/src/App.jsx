@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { FileCode2, UploadCloud, Send, LoaderCircle, Sparkles, Trash2, CheckCircle2, AlertCircle, FolderGit2 } from 'lucide-react'
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://codebase-assistant-2.onrender.com';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 export default function App() {
   const fileRef = useRef(null)
@@ -173,8 +173,10 @@ export default function App() {
           </section>
         </div>
         {error && <div className="error-banner"><AlertCircle size={17} /><span>{error}</span><button onClick={() => setError('')} aria-label="Dismiss error">×</button></div>}
-        <footer>RepoPilot · Retrieval-Augmented Generation over source code · Built with React, FastAPI & OpenAI</footer>
+        {/* <footer>RepoPilot · Retrieval-Augmented Generation over source code · Built with React, FastAPI & OpenAI</footer> */}
       </main>
     </div>
   )
 }
+
+
