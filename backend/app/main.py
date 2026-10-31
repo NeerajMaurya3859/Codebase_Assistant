@@ -85,7 +85,7 @@ allowed_origins = [
 allowed_origins.extend([
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://codebase-assistant-seven.vercel.app/"
+    "https://codebase-assistant-seven.vercel.app"
 
 ])
 
